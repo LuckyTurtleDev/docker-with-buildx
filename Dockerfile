@@ -1,5 +1,10 @@
-ARG BUILDX_VERSION=0.6.2
+ARG BUILDX_VERSION=0.6.3
 ARG DOCKER_VERSION=latest
+
+LABEL org.opencontainers.image.url="https://gitlab.com/Lukas1818/docker-with-buildx/container_registry"
+LABEL org.opencontainers.image.title="docker with buildx"
+LABEL org.opencontainers.image.source="https://gitlab.com/Lukas1818/docker-with-buildx"
+LABEL org.opencontainers.image.version="${BUILDX_VERSION}"
 
 FROM alpine AS fetcher
 
