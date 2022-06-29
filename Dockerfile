@@ -15,9 +15,9 @@ RUN chmod a+x /docker-buildx
 ARG DOCKER_VERSION
 FROM docker:${DOCKER_VERSION}
 
-LABEL org.opencontainers.image.url="https://gitlab.com/Lukas1818/docker-with-buildx/container_registry"
+LABEL org.opencontainers.image.url="https://gitlab.com/LuckyTurtleDev/docker-with-buildx/container_registry"
 LABEL org.opencontainers.image.title="docker with buildx"
-LABEL org.opencontainers.image.source="https://gitlab.com/Lukas1818/docker-with-buildx"
+LABEL org.opencontainers.image.source="https://gitlab.com/LuckyTurtleDev/docker-with-buildx"
 LABEL org.opencontainers.image.version="${BUILDX_VERSION}"
 
 COPY --from=fetcher /docker-buildx /usr/lib/docker/cli-plugins/docker-buildx
